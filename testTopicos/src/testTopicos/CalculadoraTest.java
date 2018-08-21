@@ -2,10 +2,20 @@ package testTopicos;
 
 import static org.junit.Assert.*;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 public class CalculadoraTest {
-	Calculadora c = new Calculadora();
+	Calculadora c;
+	@Before
+	public void inicio(){
+		c=new Calculadora();
+	}
+	@After
+	public void fin(){
+		System.out.println("Nada"); //aca podria ir un eliminar objeto o algo asi
+	}
 	@Test
 	public void testSuma(){
 		int resultado = c.suma(2,3);
@@ -30,5 +40,4 @@ public class CalculadoraTest {
 		int esperado = 1; //3 / 3 = 1
 		assertEquals(esperado,resultado);
 	}
-
 }
