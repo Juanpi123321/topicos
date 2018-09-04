@@ -1,5 +1,7 @@
 package testTopicos;
 
+import junit.framework.Assert;
+
 public class Calculadora {
 	
 	public int suma(int a, int b){
