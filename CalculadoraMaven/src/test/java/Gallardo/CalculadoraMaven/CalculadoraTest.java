@@ -55,5 +55,18 @@ public class CalculadoraTest {
 		int obtenido = calculadora.multiplicar(a, b);
 		Assert.assertEquals(resultado, obtenido);
 	}
-
+	
+	/**
+	 * Verifica el escenario simple del metodo dividir
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	@Test
+	public void dividirTest() {
+		int a = 10;
+		int b = 2;
+		int resultado = 5;
+		int obtenido = calculadora.dividir(a, b);
+		Assert.assertEquals(resultado, obtenido);
+	}
 }
