@@ -140,4 +140,28 @@ public class Calculadora {
 		}
 		return num2;
 	}
+	
+	/**
+	 * Realiza la operacion Cuadrado
+	 * 
+	 * @param un numero entero de tipo int
+	 * @return resultado de tipo int
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	public int cuadrado(int num) {
+		return num * num;
+	}
+	
+	/**
+	 * Realiza la operacion Raiz Cuadrada
+	 * 
+	 * @param un numero entero de tipo int
+	 * @return resultado de tipo double
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	public int raizCuadrada(int num) {
+		return (int) Math.sqrt(num); //hace un cast xq sqrt utiliza double
+	}
 }

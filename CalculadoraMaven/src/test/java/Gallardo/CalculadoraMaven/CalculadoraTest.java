@@ -137,4 +137,30 @@ public class CalculadoraTest {
 		int obtenido = calculadora.menor(a, b);
 		Assert.assertEquals(resultado, obtenido);
 	}
+	
+	/**
+	 * Verifica el escenario simple del metodo cuadrado
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	@Test
+	public void cuadradoTest() {
+		int a = 5;
+		int resultado = 25;
+		int obtenido = calculadora.cuadrado(a);
+		Assert.assertEquals(resultado, obtenido);
+	}
+	
+	/**
+	 * Verifica el escenario simple del metodo raizCuadrada
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	@Test
+	public void raizCuadradaTest() {
+		int a = 25;
+		int resultado = 5;
+		int obtenido = calculadora.raizCuadrada(a);
+		Assert.assertEquals(resultado, obtenido);
+	}
 }
