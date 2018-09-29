@@ -9,7 +9,7 @@ package Gallardo.CalculadoraMaven;
 public class Calculadora {
 
 	/**
-	 * Realiza una sumar
+	 * Realiza la operacion Sumar
 	 * 
 	 * @param numeros enteros de tipo int
 	 * @return resultado de tipo int
@@ -25,7 +25,7 @@ public class Calculadora {
 	}
 
 	/**
-	 * Realiza una resta
+	 * Realiza la operacion Resta
 	 * 
 	 * @param dos numeros enteros de tipo int
 	 * @return resultado de tipo int
@@ -37,7 +37,7 @@ public class Calculadora {
 	}
 
 	/**
-	 * Realiza una multiplicacion
+	 * Realiza la operacion Multiplicacion
 	 * 
 	 * @param dos numeros enteros de tipo int
 	 * @return resultado de tipo int
@@ -49,7 +49,7 @@ public class Calculadora {
 	}
 
 	/**
-	 * Realiza una división
+	 * Realiza la operacion División
 	 * 
 	 * @param dos números enteros de tipo int
 	 * @return resultado de tipo int
@@ -65,7 +65,7 @@ public class Calculadora {
 	}
 	
 	/**
-	 * Realiza una potencia
+	 * Realiza la operacion Potencia
 	 * 
 	 * @param dos numeros enteros de tipo int
 	 * @return resultado de tipo int
@@ -76,5 +76,20 @@ public class Calculadora {
 		return (int) Math.pow(num1, num2); //hace un cast xq pow utiliza double
 	}
 
+	/**
+	 * Realiza la operacion Factorial
+	 * 
+	 * @param dos numeros enteros de tipo int
+	 * @return resultado de tipo int
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	public int factorial(int num) {
+		int resultado = 1;
+		while(num > 1)
+			resultado *= num--; //A *= B-->(A = A * B)      
+								  //-- decrementa en una unidad
+		return resultado;
+	}
 	
 }

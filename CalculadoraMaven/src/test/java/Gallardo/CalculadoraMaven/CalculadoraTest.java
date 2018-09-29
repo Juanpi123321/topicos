@@ -83,4 +83,17 @@ public class CalculadoraTest {
 		int obtenido = calculadora.potencia(a, b);
 		Assert.assertEquals(resultado, obtenido);
 	}
+	
+	/**
+	 * Verifica el escenario simple del metodo factorial
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	@Test
+	public void factorialTest() {
+		int a = 4;
+		int resultado = 24;
+		int obtenido = calculadora.factorial(a);
+		Assert.assertEquals(resultado, obtenido);
+	}
 }
