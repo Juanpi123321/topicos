@@ -3,6 +3,7 @@ package Gallardo.CalculadoraMaven;
 /**
  * Calculadora class
  * @author Agustin Mascheroni
+ * @author Juanpi Gallardo
  *
  */
 public class Calculadora {
@@ -62,5 +63,18 @@ public class Calculadora {
 			return 0;
 		}
 	}
+	
+	/**
+	 * Realiza una potencia
+	 * 
+	 * @param dos numeros enteros de tipo int
+	 * @return resultado de tipo int
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	public int potencia(int num1, int num2) {
+		return (int) Math.pow(num1, num2); //hace un cast xq pow utiliza double
+	}
+
 	
 }

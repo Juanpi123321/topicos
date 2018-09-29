@@ -69,4 +69,18 @@ public class CalculadoraTest {
 		int obtenido = calculadora.dividir(a, b);
 		Assert.assertEquals(resultado, obtenido);
 	}
+	
+	/**
+	 * Verifica el escenario simple del metodo potencia
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	@Test
+	public void potenciaTest() {
+		int a = 2;
+		int b = 3;
+		int resultado = 8;
+		int obtenido = calculadora.potencia(a, b);
+		Assert.assertEquals(resultado, obtenido);
+	}
 }
