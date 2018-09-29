@@ -64,6 +64,13 @@
    		<scope>system</scope>
    		<systemPath>C:\Program Files\Java\jdk1.8.0_181\lib\tools.jar</systemPath>
  	</dependency>
+ 	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-site-plugin -->
+	<dependency>
+    	<groupId>org.apache.maven.plugins</groupId>
+    	<artifactId>maven-site-plugin</artifactId>
+    	<version>3.7.1</version>
+	</dependency>
+ 	
 
   </dependencies>
   
