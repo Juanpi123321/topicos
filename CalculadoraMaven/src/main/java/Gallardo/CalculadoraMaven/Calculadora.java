@@ -79,7 +79,7 @@ public class Calculadora {
 	/**
 	 * Realiza la operacion Factorial
 	 * 
-	 * @param dos numeros enteros de tipo int
+	 * @param un numero entero de tipo int
 	 * @return resultado de tipo int
 	 * 
 	 * @author Juanpi Gallardo
@@ -92,4 +92,22 @@ public class Calculadora {
 		return resultado;
 	}
 	
+	/**
+	 * Realiza la sucesion Fibonacci y devuelve el valor de la posicion ingresada
+	 * 0,1,1,2,3,5,8,13,21,34,55,89,144,..
+	 * 
+	 * @param un numero entero de tipo int
+	 * @return resultado de tipo int
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	public int fibonacci(int num) {
+		int a = 0;
+		int b = 1;
+		for(int i = 2; i <= num; i++){
+			a = a + b;
+			b = a - b;
+		}
+		return a;
+	}
 }

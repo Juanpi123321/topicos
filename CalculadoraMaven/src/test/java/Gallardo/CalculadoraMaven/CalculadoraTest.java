@@ -96,4 +96,17 @@ public class CalculadoraTest {
 		int obtenido = calculadora.factorial(a);
 		Assert.assertEquals(resultado, obtenido);
 	}
+	
+	/**
+	 * Verifica el escenario simple del metodo fibonacci
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	@Test
+	public void fibonacciTest() {
+		int a = 5;
+		int resultado = 3;
+		int obtenido = calculadora.fibonacci(a);
+		Assert.assertEquals(resultado, obtenido);
+	}
 }
