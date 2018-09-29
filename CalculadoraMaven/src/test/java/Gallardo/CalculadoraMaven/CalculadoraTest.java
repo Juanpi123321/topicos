@@ -163,4 +163,17 @@ public class CalculadoraTest {
 		int obtenido = calculadora.raizCuadrada(a);
 		Assert.assertEquals(resultado, obtenido);
 	}
+	
+	/**
+	 * Verifica el escenario simple del metodo valorAbsoluto
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	@Test
+	public void valorAbsolutoTest() {
+		int a = -5;
+		int resultado = 5;
+		int obtenido = calculadora.valorAbsoluto(a);
+		Assert.assertEquals(resultado, obtenido);
+	}
 }

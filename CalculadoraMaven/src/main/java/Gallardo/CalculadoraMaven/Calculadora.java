@@ -164,4 +164,19 @@ public class Calculadora {
 	public int raizCuadrada(int num) {
 		return (int) Math.sqrt(num); //hace un cast xq sqrt utiliza double
 	}
+	
+	/**
+	 * Realiza la operacion Valor Absoluto
+	 * 
+	 * @param un numero entero de tipo int
+	 * @return resultado de tipo int
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	public int valorAbsoluto(int num) {
+		if (num < 0){
+			return (num * -1);
+		}
+		return num;
+	}
 }
