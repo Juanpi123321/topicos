@@ -109,4 +109,32 @@ public class CalculadoraTest {
 		int obtenido = calculadora.fibonacci(a);
 		Assert.assertEquals(resultado, obtenido);
 	}
+	
+	/**
+	 * Verifica el escenario simple del metodo mayor
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	@Test
+	public void mayorTest() {
+		int a = 2;
+		int b = 5;
+		int resultado = 5;
+		int obtenido = calculadora.mayor(a, b);
+		Assert.assertEquals(resultado, obtenido);
+	}
+	
+	/**
+	 * Verifica el escenario simple del metodo menor
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	@Test
+	public void menorTest() {
+		int a = 2;
+		int b = 5;
+		int resultado = 2;
+		int obtenido = calculadora.menor(a, b);
+		Assert.assertEquals(resultado, obtenido);
+	}
 }

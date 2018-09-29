@@ -110,4 +110,34 @@ public class Calculadora {
 		}
 		return a;
 	}
+	
+	/**
+	 * Realiza la operacion Mayor, devuelve el mayor valor de dos numero ingresados
+	 * 
+	 * @param dos numeros enteros de tipo int
+	 * @return resultado de tipo int
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	public int mayor(int num1, int num2) {
+		if(num1 > num2){
+			return num1;
+		}
+		return num2;
+	}
+	
+	/**
+	 * Realiza la operacion Menor, devuelve el menor valor de dos numero ingresados
+	 * 
+	 * @param dos numeros enteros de tipo int
+	 * @return resultado de tipo int
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	public int menor(int num1, int num2) {
+		if(num1 < num2){
+			return num1;
+		}
+		return num2;
+	}
 }
