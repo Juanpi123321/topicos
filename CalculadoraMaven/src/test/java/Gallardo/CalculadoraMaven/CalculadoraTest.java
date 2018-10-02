@@ -176,4 +176,17 @@ public class CalculadoraTest {
 		int obtenido = calculadora.valorAbsoluto(a);
 		Assert.assertEquals(resultado, obtenido);
 	}
+	
+	/**
+	 * Verifica el escenario simple del metodo raizCubica
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	@Test
+	public void raizCubicaTest() {
+		int a = 125;
+		int resultado = 5;
+		int obtenido = calculadora.raizCubica(a);
+		Assert.assertEquals(resultado, obtenido);
+	}
 }

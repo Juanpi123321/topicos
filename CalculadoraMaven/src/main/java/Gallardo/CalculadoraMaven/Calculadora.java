@@ -179,4 +179,16 @@ public class Calculadora {
 		}
 		return num;
 	}
+	
+	/**
+	 * Realiza la operacion Raiz Cubica
+	 * 
+	 * @param un numero entero de tipo int
+	 * @return resultado de tipo double
+	 * 
+	 * @author Juanpi Gallardo
+	 */
+	public int raizCubica(int num) {
+		return (int) Math.cbrt(num); //hace un cast xq sqrt utiliza double
+	}
 }
